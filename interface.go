@@ -1,7 +1,7 @@
 package rocket
 
 type RocketIFC interface {
-	LoginRocketChat(uname, upass string)
-	RocketChat(pd PushData)
+	getRocketUserToken()
+	PushRocketChat()
 	GetPushData(m map[string]interface{})
 }

@@ -78,13 +78,6 @@ func (h *MsgHandel) PushRocketChat() {
 
 	// 取用户token和id
 	h.getRocketUserToken()
-	// var msg string
-	//
-	// msg += fmt.Sprintf("> 用户 **%s** 向 [%s](%s) 提交了新的内容：", h.PData.UserName, h.PData.Repository, h.PData.RepositoryUrl)
-	// msg += fmt.Sprintf("\n> [%s](%s)", h.PData.Message, h.PData.CommitUrl)
-
-	// msg += "> 用户 **" + h.PData.UserName + "** 向 [" + h.PData.Repository + "](" + h.PData.RepositoryUrl + ") 提交了新的内容："
-	// msg += "\n> [" + h.PData.Message + "](" + h.PData.CommitUrl + ")"
 
 	postValues := url.Values{}
 	postValues.Add("msg", h.PMessage)
